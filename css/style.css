@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .color-red {
   color: red;
 }
@@ -29,10 +30,9 @@
 }
 
 .service .cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4fr 4fr 4fr;
-      grid-template-columns: 4fr 4fr 4fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 2rem;
 }
 
@@ -46,4 +46,45 @@
   padding: 2rem;
   margin-left: 1rem;
 }
+
+.service .cards .card h2 {
+  color: red;
+}
+
+.service .cards .card p {
+  overflow: hidden;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__text h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 60px;
+    margin-left: 5rem;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+/* Small screens, laptops Layout: 769px to 1024px */
+/* Desktops, large screens: 1025px — 1200px */
 /*# sourceMappingURL=style.css.map */
