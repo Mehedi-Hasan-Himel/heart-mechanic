@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.color-red {
+  color: red;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__text {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__text h1 {
+  font-size: 44px;
+  margin-top: 10rem;
+}
+
+.service h1 {
+  font-size: 44px;
+  text-align: center;
+}
+
+.service .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 4fr 4fr;
+      grid-template-columns: 4fr 4fr 4fr;
+  margin-bottom: 2rem;
+}
+
+.service .cards .card {
+  height: 400px;
+  width: 380px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
