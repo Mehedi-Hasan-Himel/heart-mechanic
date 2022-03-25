@@ -6,6 +6,7 @@
 .header {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
   &__text {
     text-align: center;
     justify-content: center;
@@ -23,6 +24,7 @@
   .cards {
     display: flex;
     margin-bottom: 2rem;
+    text-align: center;
     .card {
       height: 400px;
       width: 380px;
@@ -51,6 +53,8 @@ footer p {
 @media (min-width: 320px) and (max-width: 480px) {
   .header {
     flex-direction: column;
+    text-align: center;
+
     &__text {
       h1 {
         margin-top: 3rem;
@@ -62,6 +66,8 @@ footer p {
   }
   .cards {
     flex-direction: column;
+    text-align: center;
+
     .card {
       margin-bottom: 2rem;
     }
@@ -69,17 +75,29 @@ footer p {
 }
 
 /* iPads, Tablets Layout: 481px to 768px */
-
 @media (min-width: 481px) and (max-width: 768px) {
-   
+  .header {
+    flex-direction: column;
+    text-align: center;
+
+    &__text {
+      h1 {
+        margin-top: 2rem;
+      }
+    }
+  }
+  main {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+      }
+    }
+  }
 }
 
 /* Small screens, laptops Layout: 769px to 1024px */
-
 @media (min-width: 769px) and (max-width: 1024px) {
-}
-
-/* Desktops, large screens: 1025px — 1200px */
-
-@media (min-width: 1025px) and (max-width: 1200px) {
 }
